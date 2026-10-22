@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int a,b,c,area,side;
+    printf("input any value a=");
+    scanf("%d",&a);
+    printf("input any value b=");
+    scanf("%d",&b);
+    printf("input any value c=");
+    scanf("%d",&c);
+    side=a+b+c/2;
+    printf("side is %d\n",side);
+    area=
+    
+}
