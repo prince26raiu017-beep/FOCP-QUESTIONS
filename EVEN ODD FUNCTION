@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+void countNumbers(int numbers[], int n) {
+    int zeroCount = 0;
+    int evenCount = 0;
+    int oddCount = 0;
+
+    for (int i = 0; i < n; i++) {
+        if (numbers[i] == 0) {
+            zeroCount++;
+        } else if (numbers[i] % 2 == 0) {
+            evenCount++;
+        } else {
+            oddCount++;
+        }
+    }
+
+    printf("\nTotal Zeros: %d", zeroCount);
+    printf("\nTotal Even Numbers: %d", evenCount);
+    printf("\nTotal Odd Numbers: %d\n", oddCount);
+}
+
+int main() {
+    int numbers[100], i, n;
+
+    printf("Input total numbers you want to enter: ");
+    scanf("%d", &n);
+
+    printf("Input numbers:\n");
+    for (i = 0; i < n; i++) {
+        scanf("%d", &numbers[i]);
+    }
+
+    // Pass the array and its size to the function
+    countNumbers(numbers, n);
+
+    return 0;
+}
